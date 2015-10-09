@@ -40,7 +40,7 @@ input[type=password]::-ms-reveal {
 /* Absolute Center CSS Spinner */
 .loading {
     position: fixed;
-    z-index: 1999;
+    z-index:5;
     height: 2em;
     width: 2em;
     overflow: show;
@@ -58,7 +58,7 @@ input[type=password]::-ms-reveal {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-color: #000000;
     background-color: rgba(0,0,0,0.3);
@@ -1630,113 +1630,7 @@ a.ng-binding, a[ng-click], span[ng-click] {
 
 .navbar-fixed-bottom.footer {
     background-color: rgb(201, 207, 208);
-    border: none;
-    font-size: 0.95em;
-}
 
-.modal-backdrop.in {
-    position: fixed;
-    height: 100%;
-}
-
-/* End Bootstrap overrides
--------------------------------------------------- */
-
-
-/* Benedikte overrides
--------------------------------------------------- */
-.nav-left-disable {
-    cursor: not-allowed;
-    color: #585a59;
-    text-decoration: none;
-}
-
-.nav-left-no-pointer-events {
-    pointer-events: none;
-}
-
-#nav-left-collapse {
-    li > a {
-        cursor: pointer;
-    }
-
-    li.disabled > a {
-        color: #585a59;
-
-        &:hover,
-        &:focus {
-            color: #585a59;
-            text-decoration: none;
-            cursor: not-allowed;
-            background-color: transparent;
-        }
-    }
-}
-
-#dropdownMenu1 {
-    .fa-circle.pull-right {
-        line-height: 20px;
-    }
-}
-
-#cardSelectorMenu {
-    display: inline-block;
-    width: 88%;
-    float: left;
-    margin-top: 12px;
-
-    > ul.dropdown-menu {
-        background-color: #cfd1d1;
-
-        > li > a {
-            color: #ffffff;
-
-            &:hover, &:focus {
-                color: #262626;
-                background-color: #f5f5f5;
-            }
-        }
-    }
-
-    button.dropdown-toggle {
-        &:hover, &:focus {
-            color: #f1f1f1;
-        }
-    }
-}
-
-.navbar-toggle { //ADDED
-    margin: 12px 0 0 0;
-}
-
-.selected-card-menu-item {
-    /*background-color: #c9cfd0;*/
-    > li {
-        background: #c9cfd0;
-        border-radius: 5px;
-
-        &:hover {
-            background: #c9cfd0;
-        }
-
-        > a > span {
-            color: #0079AD;
-        }
-    }
-}
-
-.menu-item-indent {
-    padding-left: 10px;
-}
-
-@media(min-width:992px) {
-    #cardSelectorMenu {
-        float: none;
-        display: block;
-        width: 100%;
-    }
-
-    #dropdownMenu1 {
         width: 100%;
     }
 
